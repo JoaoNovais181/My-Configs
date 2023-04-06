@@ -1,8 +1,6 @@
 if [ -z "$TMUX" ]; then
-  exec tmux -2
+	exec tmux -u -2
 fi
-
-
 
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -122,16 +120,22 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # export PATH=.:$PATH
-alias cduni="cd /home/tbag/Universidade/"
+alias cduni="cd /home/tbag/Universidade/3Ano/2Sem"
+alias cg="cduni && cd CG"
 alias home="cd /home/tbag"
 alias procura="firefox --search"
 alias commit="git commit -m"
 alias add="git add "
 alias push="git push"
+alias pull="git pull"
+alias stash="git stash"
+alias status="git status"
 alias "c=xclip"
 alias "v=xclip -o "
-alias exercismio="cd /home/tbag/snap/exercism/5/exercism"
 alias tmux="tmux -2"
+alias swipl="swi-prolog.swipl"
+alias equilizer="pulseaudio-equalizer-gtk"
+alias knime="~/Downloads/knime_4.7.1/knime &"
 
 #export TERM="xterm-256color"
 
@@ -146,3 +150,6 @@ alias shopt='/usr/bin/shopt'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#[ -f "/home/tbag/.ghcup/env" ] && source "/home/tbag/.ghcup/env" # ghcup-env
+[ -f "/home/tbag/.ghcup/env" ] && source "/home/tbag/.ghcup/env" # ghcup-env
