@@ -1,0 +1,104 @@
+env:
+  # TERM env customization.
+  #
+  # If this property is not set, alacritty will set it to xterm-256color.
+  #
+  # Note that some xterm terminfo databases don't declare support for italics.
+  # You can verify this by checking for the presence of `smso` and `sitm` in
+  # `infocmp xterm-256color`.
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 5
+    y: 5
+  class:
+    instance: Alacritty
+    general: Alacritty
+  decorations_theme_variant: Dark
+  decorations: none
+  startup_mode: Maximized
+  opacity: 0.9
+
+scrolling:
+  history: 1000
+  multiplier: 3
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+  bold:
+    family: MesloLGS NF
+    style: Bold
+  italic:
+    family: MesloLGS NF
+    style: Italic
+  bold_italic:
+    family: MesloLGS NF
+    style: Bold Italic
+  size: 10
+draw_bold_text_with_brigth_colors: true
+
+# colors:
+#   primary:
+#     background: '#1d1f21'
+#     foreground: "#a9b1d6"
+#   normal:
+#    black:   '#1d1f21'
+#    red:     '#cc6666'
+#    green:   '#b5bd68'
+#    yellow:  '#f0c674'
+#    blue:    '#81a2be'
+#    magenta: '#b294bb'
+#    cyan:    '#8abeb7'
+#    white:   '#c5c8c6'
+#   bright:
+#    black:   '#666666'
+#    red:     '#d54e53'
+#    green:   '#b9ca4a'
+#    yellow:  '#e7c547'
+#    blue:    '#7aa6da'
+#    magenta: '#c397d8'
+#    cyan:    '#70c0b1'
+#    white:   '#eaeaea'
+cursor:
+  style:
+    shape: Block
+    blinking: On
+    # blink-interval: 750
+
+selection:
+  save_to_clipboard: true
+
+shell:
+  program: /usr/bin/zsh
+
+colors:
+  primary:
+    background: '#2e3436'
+    foreground: '#eeeeec'
+
+  # Normal colors
+  normal:
+    black: '#2e3436'
+    red: '#cc0000'
+    green: '#73d216'
+    yellow: '#edd400'
+    blue: '#3465a4'
+    magenta: '#75507b'
+    cyan: '#f57900'
+    white: '#d3d7cf'
+
+  # Bright colors
+  bright:
+    black: '#2e3436'
+    red: '#ef2929'
+    green: '#8ae234'
+    yellow: '#fce94f'
+    blue: '#729fcf'
+    magenta: '#ad7fa8'
+    cyan: '#fcaf3e'
+    white: '#eeeeec'
+
+theme: Tangoish
