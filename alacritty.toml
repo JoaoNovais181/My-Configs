@@ -33,6 +33,7 @@ yellow = "#fba922"
 
 [colors.primary]
 background = "#1d1f21"
+# background = "#301934"
 foreground = "#c5c8c6"
 
 [cursor.style]
@@ -73,8 +74,8 @@ program = "/usr/bin/zsh"
 
 [window]
 decorations = "none"
-decorations_theme_variant = "Dark"
-opacity = 0.9
+blur = true
+opacity = 0.98
 startup_mode = "Maximized"
 
 [window.padding]
